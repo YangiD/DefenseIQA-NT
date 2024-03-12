@@ -1,0 +1,6 @@
+argparse==1.4.0
+numpy==1.18.5
+Pillow==9.5.0
+scipy==1.2.1
+torch==1.13.1
+torchvision==0.14.1
