@@ -7,15 +7,10 @@ It contains the training of the HyperIQA model with the NT (Norm regularization 
 ## Dependencies
 
 - python
-
 - torch
-
 - torchvision
-
 - Pillow
-
 - numPy
-
 - scipy
 
 Or using the following commands:
@@ -28,7 +23,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-#### Testing Quality Score and Gradient Norm for a Single Image
+### Testing Quality Score and Gradient Norm for a Single Image
 
 First, the checkpoints should be downloaded from [checkpoints_GoogleDrive](https://drive.google.com/drive/u/2/folders/1TvQxZY6290IlkS0iBw1-c277iPkc6OLI), and then move them into the checkpoints folder.
 
@@ -43,7 +38,7 @@ This will output:
 1. An $\ell_1$ norm of the output gradient with respect to the input image.
 2. A predicted quality score, where a higher value indicates better image quality.
 
-#### Training & Testing on IQA databases
+### Training & Testing on IQA databases
 
 Notice that the [LIVEC](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset should be downloaded first, and the path to the dataset should be modified in below commands.
 
@@ -61,7 +56,7 @@ python train_test_IQA_sparsity.py --if_grad --dataset_path /YOURPATH/ChallengeDB
 
 For training other IQA models ([DBCNN](https://github.com/zwx8981/DBCNN-PyTorch), [LinearityIQA](https://github.com/lidq92/LinearityIQA), [MANIQA](https://github.com/IIGROUP/MANIQA)), the NT strategy is easy to implement. The *loss_grad* in *HyperIQASolver.py* should be add in the training loss of the original model.
 
-#### Attacking Baseline or Baseline+NT Model with the FGSM Attack
+### Attacking Baseline or Baseline+NT Model with the FGSM Attack
 
 To attack the baseline HyperIQA model with an FGSM attack, run:
 
