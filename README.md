@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ### Testing Quality Score and Gradient Norm for a Single Image
 
-First, the checkpoints should be downloaded from [checkpoints_GoogleDrive](https://drive.google.com/drive/u/2/folders/1TvQxZY6290IlkS0iBw1-c277iPkc6OLI), and then move them into the checkpoints folder.
+First, the checkpoints should be downloaded from [checkpoints_GoogleDrive](https://drive.google.com/drive/u/2/folders/1TvQxZY6290IlkS0iBw1-c277iPkc6OLI), and then them should be moved into the checkpoints folder.
 
 To predict image quality and calculate the gradient norm with our baseline model and baseline+NT model trained on the LIVEC Dataset, use the following command:
 
