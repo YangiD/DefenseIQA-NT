@@ -29,13 +29,18 @@ First, the checkpoints should be downloaded from [checkpoints_GoogleDrive](https
 To predict image quality and calculate the gradient norm with our baseline model and baseline+NT model trained on the LIVEC Dataset, use the following command:
 
 ```
-python quality_and_norm_demo.py --img_name 123.bmp
+python quality_and_norm_demo.py --img 123.bmp
 ```
 
 This will output:
 
 1. An $\ell_1$ norm of the output gradient with respect to the input image.
 2. A predicted quality score, where a higher value indicates better image quality.
+
+To predict image quality and calculate the gradient norm for other images, use the following command:
+```
+python quality_and_norm_demo.py --regenerate_crops --img YOUR_PATH_OF_IMAGE
+```
 
 ### Training & Testing on IQA databases
 
