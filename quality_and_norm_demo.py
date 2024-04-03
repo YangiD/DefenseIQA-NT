@@ -55,7 +55,7 @@ def main(config):
     # HyperIQA
     model_hyper = models.HyperNet(16, 112, 224, 112, 56, 28, 14, 7).cuda()
     model_hyper.train(False)
-    modelpath = './checkpoints/livec_bs16_grad[0]_weight[0.0]_2.pth'
+    modelpath = './checkpoints/livec_bs16_grad[0]_weight[0.0].pth'
     model_dict = torch.load(modelpath)
     if 'model' in model_dict:
         model_hyper.load_state_dict(model_dict['model'])
@@ -64,7 +64,7 @@ def main(config):
     # HyperIQA+NT
     model_hyper_NT = models.HyperNet(16, 112, 224, 112, 56, 28, 14, 7).cuda()
     model_hyper_NT.train(False)
-    modelpath = './checkpoints/livec_bs16_grad[1]_weight[0.001]_2.pth' #_h[0.01].pth
+    modelpath = './checkpoints/livec_bs16_grad[1]_weight[0.001]_h[0.01].pth'
     model_dict_NT = torch.load(modelpath)
     if 'model' in model_dict:
         model_hyper_NT.load_state_dict(model_dict_NT['model'])
