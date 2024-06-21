@@ -1,6 +1,6 @@
 # ReadMe
 
-This repository contains the official implementation of the methods presented in the paper \``[**Defense Against Adversarial Attacks on No-Reference Image Quality Models with Gradient Norm Regularization**](https://arxiv.org/abs/2403.11397)'' **(CVPR 2024)**. The paper addresses the vulnerability of no-reference image quality assessment models to adversarial attacks and proposes a novel gradient norm regularization technique to enhance their robustness.  
+This repository contains the official implementation of the methods presented in the paper \``[**Defense Against Adversarial Attacks on No-Reference Image Quality Models with Gradient Norm Regularization**](https://openaccess.thecvf.com/content/CVPR2024/html/Liu_Defense_Against_Adversarial_Attacks_on_No-Reference_Image_Quality_Models_with_CVPR_2024_paper.html)'' **(CVPR 2024)**. The paper addresses the vulnerability of no-reference image quality assessment models to adversarial attacks and proposes a novel gradient norm regularization technique to enhance their robustness.  
 
 It contains the training of the HyperIQA model with the NT (Norm regularization Training) strategy, together with the attack code with the FGSM method. We express our gratitude to the authors of the CVPR 2020 paper "[Blindly Assess Image Quality in the Wild Guided by A Self-Adaptive Hyper Network](https://openaccess.thecvf.com/content_CVPR_2020/papers/Su_Blindly_Assess_Image_Quality_in_the_Wild_Guided_by_a_CVPR_2020_paper.pdf)" for sharing the source code for training the HyperIQA model.
 
