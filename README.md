@@ -73,3 +73,14 @@ To attack the HyperIQA+NT model with an FGSM attack, use:
 ```
 python FGSM_demo.py --img_name 123.bmp
 ```
+
+### Citation
+```
+@InProceedings{Liu_2024_CVPR,
+    author    = {Liu, Yujia and Yang, Chenxi and Li, Dingquan and Ding, Jianhao and Jiang, Tingting},
+    title     = {Defense Against Adversarial Attacks on No-Reference Image Quality Models with Gradient Norm Regularization},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {25554-25563}}
+```
